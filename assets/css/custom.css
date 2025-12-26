@@ -1,0 +1,102 @@
+/* Vigilant Custom Styles - Dark Theme with Gold Accents */
+
+:root {
+  --gold-primary: #C9A24D;
+  --gold-light: #E6C47E;
+  --gold-dark: #A8842B;
+  
+  --bg-dark: #000000;
+  --bg-surface: #1A1A1A;
+  --bg-card: #2D2D2D;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --text-muted: #888888;
+}
+
+/* Gold accent for headings */
+h1, h2, h3, h4 {
+  color: var(--gold-primary);
+  border-bottom: 2px solid var(--gold-dark);
+  padding-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--gold-primary);
+  text-decoration: underline;
+}
+
+/* Navigation active state */
+.nav-list .nav-list-item .nav-list-link.active {
+  background-color: rgba(201, 162, 77, 0.1);
+  color: var(--gold-primary);
+  border-left: 3px solid var(--gold-primary);
+}
+
+/* Cards for team/project sections */
+.card {
+  background: var(--bg-card);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold-dark);
+}
+
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(201, 162, 77, 0.3);
+}
+
+/* Status indicators */
+.status-active {
+  color: #10B981;
+  font-weight: 600;
+}
+
+.status-upcoming {
+  color: var(--gold-primary);
+  font-weight: 600;
+}
+
+/* Team member styling */
+.team-member {
+  border-left: 4px solid var(--gold-primary);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+  
+  h1, h2, h3 {
+    font-size: 90%;
+  }
+}

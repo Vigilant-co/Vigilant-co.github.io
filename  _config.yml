@@ -1,0 +1,44 @@
+title: "Vigilant"
+description: "Development organization building practical software solutions"
+baseurl: ""
+url: "https://vigilant-co.github.io"
+
+# Theme
+remote_theme: pmarsceill/just-the-docs
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+
+# Navigation
+aux_links:
+  "View on GitHub": "https://github.com/Vigilant-co"
+
+# Logo
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/favicon.ico"
+
+# Colors
+accent_color: gold
+
+# Collections
+collections:
+  docs:
+    permalink: "/:path/"
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+      search: true
+
+# Exclude
+exclude:
+  - README.md
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
